@@ -1,0 +1,1143 @@
+[
+  {
+    "ingredientPattern": "CCC,CCC,___",
+    "ingredients": {
+      "C": {
+        "type": "item",
+        "code": "game:cattailtops"
+      }
+    },
+    "name": "linenrope",
+    "recipeGroup": 1,
+    "width": 3,
+    "height": 3,
+    "output": {
+      "type": "item",
+      "code": "game:clothes-waist-linen-rope"
+    }
+  },
+  {
+    "ingredientPattern": "PPP,PPP,___",
+    "ingredients": {
+      "P": {
+        "type": "item",
+        "code": "game:papyrustops"
+      }
+    },
+    "name": "linenrope",
+    "recipeGroup": 1,
+    "width": 3,
+    "height": 3,
+    "output": {
+      "type": "item",
+      "code": "game:clothes-waist-linen-rope"
+    }
+  },
+  {
+    "ingredientPattern": "CD_,___,___",
+    "ingredients": {
+      "C": {
+        "type": "item",
+        "code": "game:cloth-plain"
+      },
+      "D": {
+        "type": "block",
+        "code": "game:bowl-*-fired"
+      }
+    },
+    "name": "ruralhunter",
+    "recipeGroup": 1,
+    "width": 3,
+    "height": 3,
+    "output": {
+      "type": "item",
+      "code": "game:clothes-waist-ruralhunter"
+    },
+    "attributes": {
+      "liquidContainerProps": {
+        "requiresContent": {
+          "type": "item",
+          "code": "game:dye-red"
+        },
+        "requiresLitres": 0.25
+      }
+    }
+  },
+  {
+    "ingredientPattern": "CD_,___,___",
+    "ingredients": {
+      "C": {
+        "type": "item",
+        "code": "game:cloth-plain"
+      },
+      "D": {
+        "type": "block",
+        "code": "game:woodbucket"
+      }
+    },
+    "name": "ruralhunter",
+    "recipeGroup": 1,
+    "width": 3,
+    "height": 3,
+    "output": {
+      "type": "item",
+      "code": "game:clothes-waist-ruralhunter"
+    },
+    "attributes": {
+      "liquidContainerProps": {
+        "requiresContent": {
+          "type": "item",
+          "code": "game:dye-red"
+        },
+        "requiresLitres": 0.25
+      }
+    }
+  },
+  {
+    "ingredientPattern": "CD_,___,___",
+    "ingredients": {
+      "C": {
+        "type": "item",
+        "code": "game:cloth-plain"
+      },
+      "D": {
+        "type": "block",
+        "code": "game:jug-*-fired"
+      }
+    },
+    "name": "ruralhunter",
+    "recipeGroup": 1,
+    "width": 3,
+    "height": 3,
+    "output": {
+      "type": "item",
+      "code": "game:clothes-waist-ruralhunter"
+    },
+    "attributes": {
+      "liquidContainerProps": {
+        "requiresContent": {
+          "type": "item",
+          "code": "game:dye-red"
+        },
+        "requiresLitres": 0.25
+      }
+    }
+  },
+  {
+    "ingredientPattern": "RD_,___,___",
+    "ingredients": {
+      "R": {
+        "type": "item",
+        "code": "game:clothes-waist-linen-rope"
+      },
+      "D": {
+        "type": "block",
+        "code": "game:bowl-*-fired"
+      }
+    },
+    "name": "ruralhunter",
+    "recipeGroup": 2,
+    "width": 3,
+    "height": 3,
+    "output": {
+      "type": "item",
+      "code": "game:clothes-waist-ruralhunter"
+    },
+    "attributes": {
+      "liquidContainerProps": {
+        "requiresContent": {
+          "type": "item",
+          "code": "game:dye-red"
+        },
+        "requiresLitres": 0.25
+      }
+    }
+  },
+  {
+    "ingredientPattern": "RD_,___,___",
+    "ingredients": {
+      "R": {
+        "type": "item",
+        "code": "game:clothes-waist-linen-rope"
+      },
+      "D": {
+        "type": "block",
+        "code": "game:woodbucket"
+      }
+    },
+    "name": "ruralhunter",
+    "recipeGroup": 2,
+    "width": 3,
+    "height": 3,
+    "output": {
+      "type": "item",
+      "code": "game:clothes-waist-ruralhunter"
+    },
+    "attributes": {
+      "liquidContainerProps": {
+        "requiresContent": {
+          "type": "item",
+          "code": "game:dye-red"
+        },
+        "requiresLitres": 0.25
+      }
+    }
+  },
+  {
+    "ingredientPattern": "RD_,___,___",
+    "ingredients": {
+      "R": {
+        "type": "item",
+        "code": "game:clothes-waist-linen-rope"
+      },
+      "D": {
+        "type": "block",
+        "code": "game:jug-*-fired"
+      }
+    },
+    "name": "ruralhunter",
+    "recipeGroup": 2,
+    "width": 3,
+    "height": 3,
+    "output": {
+      "type": "item",
+      "code": "game:clothes-waist-ruralhunter"
+    },
+    "attributes": {
+      "liquidContainerProps": {
+        "requiresContent": {
+          "type": "item",
+          "code": "game:dye-red"
+        },
+        "requiresLitres": 0.25
+      }
+    }
+  },
+  {
+    "ingredientPattern": "PD_,___,___",
+    "ingredients": {
+      "P": {
+        "type": "item",
+        "code": "game:hide-pelt-*",
+        "tags": [
+          "size-small"
+        ]
+      },
+      "D": {
+        "type": "block",
+        "code": "game:bowl-*-fired"
+      }
+    },
+    "name": "marketeer",
+    "recipeGroup": 1,
+    "width": 3,
+    "height": 3,
+    "output": {
+      "type": "item",
+      "code": "game:clothes-waist-marketeer"
+    },
+    "attributes": {
+      "liquidContainerProps": {
+        "requiresContent": {
+          "type": "item",
+          "code": "game:dye-red"
+        },
+        "requiresLitres": 0.25
+      }
+    }
+  },
+  {
+    "ingredientPattern": "PD_,___,___",
+    "ingredients": {
+      "P": {
+        "type": "item",
+        "code": "game:hide-pelt-*",
+        "tags": [
+          "size-small"
+        ]
+      },
+      "D": {
+        "type": "block",
+        "code": "game:woodbucket"
+      }
+    },
+    "name": "marketeer",
+    "recipeGroup": 1,
+    "width": 3,
+    "height": 3,
+    "output": {
+      "type": "item",
+      "code": "game:clothes-waist-marketeer"
+    },
+    "attributes": {
+      "liquidContainerProps": {
+        "requiresContent": {
+          "type": "item",
+          "code": "game:dye-red"
+        },
+        "requiresLitres": 0.25
+      }
+    }
+  },
+  {
+    "ingredientPattern": "PD_,___,___",
+    "ingredients": {
+      "P": {
+        "type": "item",
+        "code": "game:hide-pelt-*",
+        "tags": [
+          "size-small"
+        ]
+      },
+      "D": {
+        "type": "block",
+        "code": "game:jug-*-fired"
+      }
+    },
+    "name": "marketeer",
+    "recipeGroup": 1,
+    "width": 3,
+    "height": 3,
+    "output": {
+      "type": "item",
+      "code": "game:clothes-waist-marketeer"
+    },
+    "attributes": {
+      "liquidContainerProps": {
+        "requiresContent": {
+          "type": "item",
+          "code": "game:dye-red"
+        },
+        "requiresLitres": 0.25
+      }
+    }
+  },
+  {
+    "ingredientPattern": "PD_,___,___",
+    "ingredients": {
+      "P": {
+        "type": "item",
+        "code": "game:hide-pelt-*",
+        "tags": [
+          "size-medium"
+        ]
+      },
+      "D": {
+        "type": "block",
+        "code": "game:bowl-*-fired"
+      }
+    },
+    "name": "marketeer",
+    "recipeGroup": 1,
+    "width": 3,
+    "height": 3,
+    "output": {
+      "type": "item",
+      "code": "game:clothes-waist-marketeer"
+    },
+    "attributes": {
+      "liquidContainerProps": {
+        "requiresContent": {
+          "type": "item",
+          "code": "game:dye-red"
+        },
+        "requiresLitres": 0.25
+      }
+    }
+  },
+  {
+    "ingredientPattern": "PD_,___,___",
+    "ingredients": {
+      "P": {
+        "type": "item",
+        "code": "game:hide-pelt-*",
+        "tags": [
+          "size-medium"
+        ]
+      },
+      "D": {
+        "type": "block",
+        "code": "game:woodbucket"
+      }
+    },
+    "name": "marketeer",
+    "recipeGroup": 1,
+    "width": 3,
+    "height": 3,
+    "output": {
+      "type": "item",
+      "code": "game:clothes-waist-marketeer"
+    },
+    "attributes": {
+      "liquidContainerProps": {
+        "requiresContent": {
+          "type": "item",
+          "code": "game:dye-red"
+        },
+        "requiresLitres": 0.25
+      }
+    }
+  },
+  {
+    "ingredientPattern": "PD_,___,___",
+    "ingredients": {
+      "P": {
+        "type": "item",
+        "code": "game:hide-pelt-*",
+        "tags": [
+          "size-medium"
+        ]
+      },
+      "D": {
+        "type": "block",
+        "code": "game:jug-*-fired"
+      }
+    },
+    "name": "marketeer",
+    "recipeGroup": 1,
+    "width": 3,
+    "height": 3,
+    "output": {
+      "type": "item",
+      "code": "game:clothes-waist-marketeer"
+    },
+    "attributes": {
+      "liquidContainerProps": {
+        "requiresContent": {
+          "type": "item",
+          "code": "game:dye-red"
+        },
+        "requiresLitres": 0.25
+      }
+    }
+  },
+  {
+    "ingredientPattern": "HP_,___,___",
+    "ingredients": {
+      "H": {
+        "type": "item",
+        "code": "game:clothes-waist-ruralhunter"
+      },
+      "P": {
+        "type": "item",
+        "code": "game:hide-pelt-*",
+        "tags": [
+          "size-small"
+        ]
+      }
+    },
+    "name": "marketeer",
+    "recipeGroup": 2,
+    "width": 3,
+    "height": 3,
+    "output": {
+      "type": "item",
+      "code": "game:clothes-waist-marketeer"
+    }
+  },
+  {
+    "ingredientPattern": "HP_,___,___",
+    "ingredients": {
+      "H": {
+        "type": "item",
+        "code": "game:clothes-waist-ruralhunter"
+      },
+      "P": {
+        "type": "item",
+        "code": "game:hide-pelt-*",
+        "tags": [
+          "size-medium"
+        ]
+      }
+    },
+    "name": "marketeer",
+    "recipeGroup": 2,
+    "width": 3,
+    "height": 3,
+    "output": {
+      "type": "item",
+      "code": "game:clothes-waist-marketeer"
+    }
+  },
+  {
+    "ingredientPattern": "PVD,___,___",
+    "ingredients": {
+      "P": {
+        "type": "item",
+        "code": "game:hide-pelt-*",
+        "tags": [
+          "size-small"
+        ]
+      },
+      "V": {
+        "type": "block",
+        "code": "game:wildvine-*"
+      },
+      "D": {
+        "type": "block",
+        "code": "game:bowl-*-fired"
+      }
+    },
+    "name": "mossbelt",
+    "recipeGroup": 1,
+    "width": 3,
+    "height": 3,
+    "output": {
+      "type": "item",
+      "code": "game:clothes-waist-moss-embroidered-belt"
+    },
+    "attributes": {
+      "liquidContainerProps": {
+        "requiresContent": {
+          "type": "item",
+          "code": "game:dye-green"
+        },
+        "requiresLitres": 0.25
+      }
+    }
+  },
+  {
+    "ingredientPattern": "PVD,___,___",
+    "ingredients": {
+      "P": {
+        "type": "item",
+        "code": "game:hide-pelt-*",
+        "tags": [
+          "size-small"
+        ]
+      },
+      "V": {
+        "type": "block",
+        "code": "game:wildvine-*"
+      },
+      "D": {
+        "type": "block",
+        "code": "game:woodbucket"
+      }
+    },
+    "name": "mossbelt",
+    "recipeGroup": 1,
+    "width": 3,
+    "height": 3,
+    "output": {
+      "type": "item",
+      "code": "game:clothes-waist-moss-embroidered-belt"
+    },
+    "attributes": {
+      "liquidContainerProps": {
+        "requiresContent": {
+          "type": "item",
+          "code": "game:dye-green"
+        },
+        "requiresLitres": 0.25
+      }
+    }
+  },
+  {
+    "ingredientPattern": "PVD,___,___",
+    "ingredients": {
+      "P": {
+        "type": "item",
+        "code": "game:hide-pelt-*",
+        "tags": [
+          "size-small"
+        ]
+      },
+      "V": {
+        "type": "block",
+        "code": "game:wildvine-*"
+      },
+      "D": {
+        "type": "block",
+        "code": "game:jug-*-fired"
+      }
+    },
+    "name": "mossbelt",
+    "recipeGroup": 1,
+    "width": 3,
+    "height": 3,
+    "output": {
+      "type": "item",
+      "code": "game:clothes-waist-moss-embroidered-belt"
+    },
+    "attributes": {
+      "liquidContainerProps": {
+        "requiresContent": {
+          "type": "item",
+          "code": "game:dye-green"
+        },
+        "requiresLitres": 0.25
+      }
+    }
+  },
+  {
+    "ingredientPattern": "PVD,___,___",
+    "ingredients": {
+      "P": {
+        "type": "item",
+        "code": "game:hide-pelt-*",
+        "tags": [
+          "size-medium"
+        ]
+      },
+      "V": {
+        "type": "block",
+        "code": "game:wildvine-*"
+      },
+      "D": {
+        "type": "block",
+        "code": "game:bowl-*-fired"
+      }
+    },
+    "name": "mossbelt",
+    "recipeGroup": 1,
+    "width": 3,
+    "height": 3,
+    "output": {
+      "type": "item",
+      "code": "game:clothes-waist-moss-embroidered-belt"
+    },
+    "attributes": {
+      "liquidContainerProps": {
+        "requiresContent": {
+          "type": "item",
+          "code": "game:dye-green"
+        },
+        "requiresLitres": 0.25
+      }
+    }
+  },
+  {
+    "ingredientPattern": "PVD,___,___",
+    "ingredients": {
+      "P": {
+        "type": "item",
+        "code": "game:hide-pelt-*",
+        "tags": [
+          "size-medium"
+        ]
+      },
+      "V": {
+        "type": "block",
+        "code": "game:wildvine-*"
+      },
+      "D": {
+        "type": "block",
+        "code": "game:woodbucket"
+      }
+    },
+    "name": "mossbelt",
+    "recipeGroup": 1,
+    "width": 3,
+    "height": 3,
+    "output": {
+      "type": "item",
+      "code": "game:clothes-waist-moss-embroidered-belt"
+    },
+    "attributes": {
+      "liquidContainerProps": {
+        "requiresContent": {
+          "type": "item",
+          "code": "game:dye-green"
+        },
+        "requiresLitres": 0.25
+      }
+    }
+  },
+  {
+    "ingredientPattern": "PVD,___,___",
+    "ingredients": {
+      "P": {
+        "type": "item",
+        "code": "game:hide-pelt-*",
+        "tags": [
+          "size-medium"
+        ]
+      },
+      "V": {
+        "type": "block",
+        "code": "game:wildvine-*"
+      },
+      "D": {
+        "type": "block",
+        "code": "game:jug-*-fired"
+      }
+    },
+    "name": "mossbelt",
+    "recipeGroup": 1,
+    "width": 3,
+    "height": 3,
+    "output": {
+      "type": "item",
+      "code": "game:clothes-waist-moss-embroidered-belt"
+    },
+    "attributes": {
+      "liquidContainerProps": {
+        "requiresContent": {
+          "type": "item",
+          "code": "game:dye-green"
+        },
+        "requiresLitres": 0.25
+      }
+    }
+  },
+  {
+    "ingredientPattern": "MVD,___,___",
+    "ingredients": {
+      "M": {
+        "type": "item",
+        "code": "game:clothes-waist-marketeer"
+      },
+      "V": {
+        "type": "block",
+        "code": "game:wildvine-*"
+      },
+      "D": {
+        "type": "block",
+        "code": "game:bowl-*-fired"
+      }
+    },
+    "name": "mossbelt",
+    "recipeGroup": 2,
+    "width": 3,
+    "height": 3,
+    "output": {
+      "type": "item",
+      "code": "game:clothes-waist-moss-embroidered-belt"
+    },
+    "attributes": {
+      "liquidContainerProps": {
+        "requiresContent": {
+          "type": "item",
+          "code": "game:dye-green"
+        },
+        "requiresLitres": 0.25
+      }
+    }
+  },
+  {
+    "ingredientPattern": "MVD,___,___",
+    "ingredients": {
+      "M": {
+        "type": "item",
+        "code": "game:clothes-waist-marketeer"
+      },
+      "V": {
+        "type": "block",
+        "code": "game:wildvine-*"
+      },
+      "D": {
+        "type": "block",
+        "code": "game:woodbucket"
+      }
+    },
+    "name": "mossbelt",
+    "recipeGroup": 2,
+    "width": 3,
+    "height": 3,
+    "output": {
+      "type": "item",
+      "code": "game:clothes-waist-moss-embroidered-belt"
+    },
+    "attributes": {
+      "liquidContainerProps": {
+        "requiresContent": {
+          "type": "item",
+          "code": "game:dye-green"
+        },
+        "requiresLitres": 0.25
+      }
+    }
+  },
+  {
+    "ingredientPattern": "MVD,___,___",
+    "ingredients": {
+      "M": {
+        "type": "item",
+        "code": "game:clothes-waist-marketeer"
+      },
+      "V": {
+        "type": "block",
+        "code": "game:wildvine-*"
+      },
+      "D": {
+        "type": "block",
+        "code": "game:jug-*-fired"
+      }
+    },
+    "name": "mossbelt",
+    "recipeGroup": 2,
+    "width": 3,
+    "height": 3,
+    "output": {
+      "type": "item",
+      "code": "game:clothes-waist-moss-embroidered-belt"
+    },
+    "attributes": {
+      "liquidContainerProps": {
+        "requiresContent": {
+          "type": "item",
+          "code": "game:dye-green"
+        },
+        "requiresLitres": 0.25
+      }
+    }
+  },
+  {
+    "ingredientPattern": "CLB,___,___",
+    "ingredients": {
+      "C": {
+        "type": "item",
+        "code": "game:cloth-plain"
+      },
+      "L": {
+        "type": "item",
+        "code": "game:leather-normal-plain"
+      },
+      "B": {
+        "type": "item",
+        "code": "game:metalbit-bismuthbronze",
+        "quantity": 4
+      }
+    },
+    "name": "wanderer",
+    "recipeGroup": 1,
+    "width": 3,
+    "height": 3,
+    "output": {
+      "type": "item",
+      "code": "game:clothes-waist-wanderer"
+    }
+  },
+  {
+    "ingredientPattern": "HLB,___,___",
+    "ingredients": {
+      "H": {
+        "type": "item",
+        "code": "game:clothes-waist-ruralhunter"
+      },
+      "L": {
+        "type": "item",
+        "code": "game:leather-normal-plain"
+      },
+      "B": {
+        "type": "item",
+        "code": "game:metalbit-bismuthbronze",
+        "quantity": 4
+      }
+    },
+    "name": "wanderer",
+    "recipeGroup": 2,
+    "width": 3,
+    "height": 3,
+    "output": {
+      "type": "item",
+      "code": "game:clothes-waist-wanderer"
+    }
+  },
+  {
+    "ingredientPattern": "B_L,___,___",
+    "ingredients": {
+      "B": {
+        "type": "item",
+        "code": "game:metalplate-*",
+        "allowedVariants": [
+          "tinbronze",
+          "bismuthbronze",
+          "blackbronze"
+        ]
+      },
+      "L": {
+        "type": "item",
+        "code": "game:leather-normal-plain"
+      }
+    },
+    "name": "bronzebelt",
+    "recipeGroup": 1,
+    "width": 3,
+    "height": 3,
+    "output": {
+      "type": "item",
+      "code": "game:clothes-waist-bronzebelt"
+    }
+  },
+  {
+    "ingredientPattern": "WB_,___,___",
+    "ingredients": {
+      "W": {
+        "type": "item",
+        "code": "game:clothes-waist-wanderer"
+      },
+      "B": {
+        "type": "item",
+        "code": "game:metalplate-*",
+        "allowedVariants": [
+          "tinbronze",
+          "bismuthbronze",
+          "blackbronze"
+        ]
+      }
+    },
+    "name": "bronzebelt",
+    "recipeGroup": 2,
+    "width": 3,
+    "height": 3,
+    "output": {
+      "type": "item",
+      "code": "game:clothes-waist-bronzebelt"
+    }
+  },
+  {
+    "ingredientPattern": "Z_L,___,___",
+    "ingredients": {
+      "Z": {
+        "type": "item",
+        "code": "game:metalplate-zinc"
+      },
+      "L": {
+        "type": "item",
+        "code": "game:leather-normal-plain"
+      }
+    },
+    "name": "warrior",
+    "width": 3,
+    "height": 3,
+    "output": {
+      "type": "item",
+      "code": "game:clothes-waist-warrior"
+    }
+  },
+  {
+    "ingredientPattern": "LLT,___,___",
+    "ingredients": {
+      "L": {
+        "type": "item",
+        "code": "game:leather-normal-plain"
+      },
+      "T": {
+        "type": "item",
+        "code": "game:metalplate-tin"
+      }
+    },
+    "name": "heavybelt",
+    "recipeGroup": 1,
+    "width": 3,
+    "height": 3,
+    "output": {
+      "type": "item",
+      "code": "game:clothes-waist-heavy-belt"
+    }
+  },
+  {
+    "ingredientPattern": "BL_,___,___",
+    "ingredients": {
+      "B": {
+        "type": "item",
+        "code": "game:clothes-waist-bronzebelt"
+      },
+      "L": {
+        "type": "item",
+        "code": "game:leather-normal-plain"
+      }
+    },
+    "name": "heavybelt",
+    "recipeGroup": 2,
+    "width": 3,
+    "height": 3,
+    "output": {
+      "type": "item",
+      "code": "game:clothes-waist-heavy-belt"
+    }
+  },
+  {
+    "ingredientPattern": "LLI,___,___",
+    "ingredients": {
+      "L": {
+        "type": "item",
+        "code": "game:leather-normal-plain"
+      },
+      "I": {
+        "type": "item",
+        "code": "game:metalplate-iron"
+      }
+    },
+    "name": "sturdybelt",
+    "recipeGroup": 1,
+    "width": 3,
+    "height": 3,
+    "output": {
+      "type": "item",
+      "code": "game:clothes-waist-sturdy-belt"
+    }
+  },
+  {
+    "ingredientPattern": "HI_,___,___",
+    "ingredients": {
+      "H": {
+        "type": "item",
+        "code": "game:clothes-waist-heavy-belt"
+      },
+      "I": {
+        "type": "item",
+        "code": "game:metalplate-iron"
+      }
+    },
+    "name": "sturdybelt",
+    "recipeGroup": 2,
+    "width": 3,
+    "height": 3,
+    "output": {
+      "type": "item",
+      "code": "game:clothes-waist-sturdy-belt"
+    }
+  },
+  {
+    "ingredientPattern": "LLI,G__,___",
+    "ingredients": {
+      "L": {
+        "type": "item",
+        "code": "game:leather-normal-plain"
+      },
+      "I": {
+        "type": "item",
+        "code": "game:metalplate-iron"
+      },
+      "G": {
+        "type": "item",
+        "code": "game:nugget-nativegold",
+        "quantity": 4
+      }
+    },
+    "name": "miner",
+    "recipeGroup": 1,
+    "width": 3,
+    "height": 3,
+    "output": {
+      "type": "item",
+      "code": "game:clothes-waist-miner"
+    }
+  },
+  {
+    "ingredientPattern": "SG_,___,___",
+    "ingredients": {
+      "S": {
+        "type": "item",
+        "code": "game:clothes-waist-sturdy-belt"
+      },
+      "G": {
+        "type": "item",
+        "code": "game:nugget-nativegold",
+        "quantity": 4
+      }
+    },
+    "name": "miner",
+    "recipeGroup": 2,
+    "width": 3,
+    "height": 3,
+    "output": {
+      "type": "item",
+      "code": "game:clothes-waist-miner"
+    }
+  },
+  {
+    "ingredientPattern": "LLI,S__,___",
+    "ingredients": {
+      "L": {
+        "type": "item",
+        "code": "game:leather-normal-plain"
+      },
+      "I": {
+        "type": "item",
+        "code": "game:metalplate-iron"
+      },
+      "S": {
+        "type": "item",
+        "code": "game:leather-sturdy-plain"
+      }
+    },
+    "name": "sturyleather",
+    "recipeGroup": 1,
+    "width": 3,
+    "height": 3,
+    "output": {
+      "type": "item",
+      "code": "game:clothes-waist-sturdy-leather-belt"
+    }
+  },
+  {
+    "ingredientPattern": "US_,___,___",
+    "ingredients": {
+      "U": {
+        "type": "item",
+        "code": "game:clothes-waist-sturdy-belt"
+      },
+      "S": {
+        "type": "item",
+        "code": "game:leather-sturdy-plain"
+      }
+    },
+    "name": "sturyleather",
+    "recipeGroup": 2,
+    "width": 3,
+    "height": 3,
+    "output": {
+      "type": "item",
+      "code": "game:clothes-waist-sturdy-leather-belt"
+    }
+  },
+  {
+    "ingredientPattern": "LBL,I__,___",
+    "ingredients": {
+      "L": {
+        "type": "item",
+        "code": "game:leather-normal-plain"
+      },
+      "B": {
+        "type": "item",
+        "code": "game:metalplate-*",
+        "allowedVariants": [
+          "tinbronze",
+          "bismuthbronze",
+          "blackbronze"
+        ]
+      },
+      "I": {
+        "type": "item",
+        "code": "game:metalplate-iron"
+      }
+    },
+    "name": "heavytoolbelt",
+    "recipeGroup": 1,
+    "width": 3,
+    "height": 3,
+    "output": {
+      "type": "item",
+      "code": "game:clothes-waist-heavy-tool-belt"
+    }
+  },
+  {
+    "ingredientPattern": "BLI,___,___",
+    "ingredients": {
+      "B": {
+        "type": "item",
+        "code": "game:clothes-waist-bronzebelt"
+      },
+      "L": {
+        "type": "item",
+        "code": "game:leather-normal-plain"
+      },
+      "I": {
+        "type": "item",
+        "code": "game:metalplate-iron"
+      }
+    },
+    "name": "heavytoolbelt",
+    "recipeGroup": 2,
+    "width": 3,
+    "height": 3,
+    "output": {
+      "type": "item",
+      "code": "game:clothes-waist-heavy-tool-belt"
+    }
+  }
+]

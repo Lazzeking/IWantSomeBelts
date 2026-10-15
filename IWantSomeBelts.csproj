@@ -1,0 +1,44 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <OutputPath>bin\$(Configuration)\Mods\mod</OutputPath>
+    <Nullable>enable</Nullable>
+    <RootNamespace>IWantSomeBelts</RootNamespace>
+    <AssemblyName>IWantSomeBelts</AssemblyName>
+    <!-- Flatpak 1.22.7. Export VINTAGE_STORY to override this if the install moves. -->
+    <VINTAGE_STORY Condition="'$(VINTAGE_STORY)' == ''">/var/lib/flatpak/app/at.vintagestory.VintageStory/x86_64/stable/d62c776d061c9e8e6d8148d7665303d3873872ec2d4cec14d2dd2e2ece3b8121/files/extra/vintagestory</VINTAGE_STORY>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="VintagestoryAPI">
+      <HintPath>$(VINTAGE_STORY)/VintagestoryAPI.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="modinfo.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="modicon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="assets/**/*">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <PropertyGroup>
+    <ModsFolder Condition="'$(ModsFolder)' == ''">/home/nicolo/.var/app/at.vintagestory.VintageStory/config/VintagestoryData/Mods</ModsFolder>
+  </PropertyGroup>
+
+  <Target Name="PackageMod" AfterTargets="Build" Condition="'$(DesignTimeBuild)' != 'true'">
+    <Exec WorkingDirectory="$(MSBuildProjectDirectory)" Command="python3 pack.py &quot;$(MSBuildProjectDirectory)&quot; &quot;$(TargetDir)&quot; &quot;$(ModsFolder)&quot; &quot;$(Configuration)&quot;" />
+  </Target>
+
+</Project>

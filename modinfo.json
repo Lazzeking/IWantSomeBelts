@@ -1,0 +1,15 @@
+{
+  "$schema": "https://moddbcdn.vintagestory.at/schema/modinfo.latest.json",
+  "type": "Code",
+  "modid": "iwantsomebelts",
+  "name": "I Want Some Belts",
+  "authors": [
+    "Lazzeking"
+  ],
+  "description": "Recipes and tool slots for vanilla belts, from a cattail cord up to the heavy tool belt. Requires Salty's Tool Belt.",
+  "version": "1.0.0",
+  "dependencies": {
+    "game": "1.22.7",
+    "toolbelt": "0.3.6"
+  }
+}
