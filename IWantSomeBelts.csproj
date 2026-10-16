@@ -38,7 +38,39 @@
   </PropertyGroup>
 
   <Target Name="PackageMod" AfterTargets="Build" Condition="'$(DesignTimeBuild)' != 'true'">
-    <Exec WorkingDirectory="$(MSBuildProjectDirectory)" Command="python3 pack.py &quot;$(MSBuildProjectDirectory)&quot; &quot;$(TargetDir)&quot; &quot;$(ModsFolder)&quot; &quot;$(Configuration)&quot;" />
+    <ReadLinesFromFile File="$(MSBuildProjectDirectory)/modinfo.json">
+      <Output TaskParameter="Lines" ItemName="ModInfoLine" />
+    </ReadLinesFromFile>
+    <PropertyGroup>
+      <ModInfoText>@(ModInfoLine, ' ')</ModInfoText>
+      <ModInfoText>$(ModInfoText.Replace(',', ' '))</ModInfoText>
+      <ModId>$([System.Text.RegularExpressions.Regex]::Match($(ModInfoText), '&quot;modid&quot;\s*:\s*&quot;([^&quot;]+)&quot;').Groups.get_Item(1).Value)</ModId>
+      <ModVersion>$([System.Text.RegularExpressions.Regex]::Match($(ModInfoText), '&quot;version&quot;\s*:\s*&quot;([^&quot;]+)&quot;').Groups.get_Item(1).Value)</ModVersion>
+      <StageDir>$(MSBuildProjectDirectory)/bin/$(Configuration)/stage/</StageDir>
+      <ModZip>$(MSBuildProjectDirectory)/bin/$(Configuration)/$(ModId)_$(ModVersion).zip</ModZip>
+      <ReleaseDir>$(MSBuildProjectDirectory)/Release</ReleaseDir>
+    </PropertyGroup>
+    <Error Condition="'$(ModId)' == '' Or '$(ModVersion)' == ''" Text="Could not read modid and version from modinfo.json." />
+
+    <RemoveDir Directories="$(StageDir)" />
+    <MakeDir Directories="$(StageDir)" />
+    <Copy SourceFiles="$(TargetDir)$(TargetName).dll;$(TargetDir)modinfo.json;$(TargetDir)modicon.png" DestinationFolder="$(StageDir)" />
+    <ItemGroup>
+      <ModAsset Include="$(TargetDir)assets/**/*.*" />
+    </ItemGroup>
+    <Copy SourceFiles="@(ModAsset)" DestinationFiles="@(ModAsset->'$(StageDir)assets/%(RecursiveDir)%(Filename)%(Extension)')" />
+    <ZipDirectory SourceDirectory="$(StageDir)" DestinationFile="$(ModZip)" Overwrite="true" />
+
+    <ItemGroup>
+      <PreviousZip Include="$(ModsFolder)/$(ModId)_*.zip" />
+      <PreviousRelease Include="$(ReleaseDir)/$(ModId)_*.zip" />
+    </ItemGroup>
+    <Delete Files="@(PreviousZip)" />
+    <Copy SourceFiles="$(ModZip)" DestinationFolder="$(ModsFolder)" />
+    <MakeDir Directories="$(ReleaseDir)" Condition="'$(Configuration)' == 'Release'" />
+    <Delete Files="@(PreviousRelease)" Condition="'$(Configuration)' == 'Release'" />
+    <Copy SourceFiles="$(ModZip)" DestinationFolder="$(ReleaseDir)" Condition="'$(Configuration)' == 'Release'" />
+    <Message Importance="high" Text="Installed $(ModId)_$(ModVersion).zip into $(ModsFolder)" />
   </Target>
 
 </Project>
